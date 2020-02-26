@@ -16,8 +16,12 @@
       var button = document.getElementById("change-button");
       var firstParagraph = document.getElementById("first-paragraph")
       var onButtonClick = function(){
-        firstParagraph.textContent = "Get Some Help You Normie";
-      }
+        if (firstParagraph.textContent = "Hello Person. How Are You Person. Why Are You On My Website Person?") {
+          firstParagraph.textContent = "Get Some Help You Normie";
+        } else {
+          firstParagraph.textCOntent = "Hello Person. How Are You Person. Why Are You On My Website Person?";
+        };
+      };
       button.addEventListener("click", onButtonClick);
     </script>
   </body>
