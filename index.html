@@ -16,10 +16,11 @@
       var button = document.getElementById("change-button");
       var firstParagraph = document.getElementById("first-paragraph")
       var onButtonClick = function(){
-        if (firstParagraph.textContent = "Hello Person. How Are You Person. Why Are You On My Website Person?") {
-          firstParagraph.textContent = "Get Some Help You Normie";
+        var text = firstParagraph.textContent;
+        if (text = "Hello Person. How Are You Person. Why Are You On My Website Person?") {
+          text = "Get Some Help You Normie";
         } else {
-          firstParagraph.textCOntent = "Hello Person. How Are You Person. Why Are You On My Website Person?";
+          text = "Hello Person. How Are You Person. Why Are You On My Website Person?";
         };
       };
       button.addEventListener("click", onButtonClick);
