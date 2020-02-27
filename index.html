@@ -3,14 +3,19 @@
   <head>
     <title>Test: First Github Page</title>
     <style>
+      body {
+        text-align: center;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
       #first-paragraph {
-        color: red;
+        color: black;
       }
     </style>  
   </head>
   <body>
     <h1>Hi Person</h1>
     <span id="first-paragraph">Hello Person. How Are You Person. Why Are You On My Website Person?</span>
+    <br>
     <button id="change-button">Change</button>
     <script>
       var button = document.getElementById("change-button");
@@ -18,8 +23,10 @@
       var onButtonClick = function(){
         if (firstParagraph.textContent === "Hello Person. How Are You Person. Why Are You On My Website Person?") {
           firstParagraph.textContent = "Get Some Help You Normie";
+          firstParagraph.style.color = red;
         } else {
           firstParagraph.textContent = "Hello Person. How Are You Person. Why Are You On My Website Person?";
+          firstParagraph.style.color = black;
         };
       };
       button.addEventListener("click", onButtonClick);
